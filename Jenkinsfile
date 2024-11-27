@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 docker {
-                    image 'node:19-alpine'
+                    image 'node:18-alpine'
                     reuseNode true
                 }
                 steps {
